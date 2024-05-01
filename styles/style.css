@@ -3,10 +3,10 @@ html{
 }
 
 body{
-    background-color: #00c9ff;
-    background: -webkit-linear-gradient(to right, #92fe9d, #00c9ff);
+    background-color: var(--color-3);
+    background: -webkit-linear-gradient(to top, var(--color-4), var(--color-3));
     /*Chrome 10-25, Safari 5.1-6*/
-    background: linear-gradient(to right, #92fe9d, #00c9ff);
+    background: linear-gradient(to top, var(--color-4), var(--color-3));
     /*Chrome 26+, Opera 12, etc*/
     color: var(--color-white);
     min-height: 100vh;
@@ -15,6 +15,14 @@ body{
 :root{
     --color-black: #000;
     --color-white: #fff;
+    --color-1: #2b2c30;
+    --color-2: #35313b;
+    --color-3:#453745;
+    --color-4:#613c4c;
+    --color-5: #6c2d6a;
+    --color-6: #ac6aac;
+    --color-7: #b684b5;
+    --color-8: #dab0da;
 }
 
 .container-main{
@@ -28,10 +36,10 @@ body{
 }
 
 .banner{
-    background: linear-gradient(to bottom, #1e051f 50%, #037bc0 100%);
+    background: linear-gradient(to bottom, var(--color-5) 50%, var(--color-1));
     background-position: center center;
     background-size: cover;
-    border: 2px solid var(--color-white);
+    border: 1px solid var(--color-black);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -50,8 +58,8 @@ body{
 }
 
 .banner .button{
-    background-color: #037bc0;
-    border: 3px solid var(--color-black);
+    background-color: var(--color-5);
+    border: 2px solid var(--color-black);
     border-radius: 100px;
     color: var(--color-white);
     cursor: pointer;
@@ -79,15 +87,43 @@ body{
     border-radius: 8px;
     min-height: 210px;
     padding: 20px;
+    border: 1px solid var(--color-black);
 }
-/*
-.card .texts{
 
+.one{
+    background-color: var(--color-8);
+    color: #000;
+}
+
+.two{
+    background-color: var(--color-7);
+    color: #000;
+}
+
+.three{
+    background-color: var(--color-6);
+    color: #000;
+}
+
+.four{
+    background-color: var(--color-1);
+}
+
+.five{
+    background-color: var(--color-2);
+}
+
+.six{
+    background-color: var(--color-3);
+}
+
+.card .texts{
+    text-align: center;
 }
 
 .card .texts h5{
-
-}*/
+    text-shadow: #000;
+}
 
 /* Laptopts/PCs, 992px y más */
 @media only screen and (max-width: 992px){

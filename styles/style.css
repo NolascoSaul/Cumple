@@ -56,7 +56,7 @@ main section p{
 
 #banner{
     margin: 0 auto;
-    background-image: url('/img/principal.jpg');
+    background-image: url('/../img/principal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -91,7 +91,7 @@ main section p{
 
 /* Bloque sobre nosotros*/
 .sobre-nosotros{
-    background-image: linear-gradient(to right, transparent 50%, rgb(1 78 124) 50%, #294380 100%), url(/img/nosotros.jpg);
+    background-image: linear-gradient(to right, transparent 50%, rgb(1 78 124) 50%, #294380 100%), url(/../img/nosotros.jpg);
     background-position: left center;
     background-repeat: no-repeat;
     padding: 10rem 0;

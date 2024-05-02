@@ -1,0 +1,51 @@
+/*Tablets*/
+@media only screen and (max-width: 992px){
+    .checkbtn{
+        display: block;
+    }
+
+    .nav-principal{
+        display: inline;
+    }
+
+    .nav-principal ul{
+        border-top: 1px solid black;
+        position: fixed;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        top: 5rem;
+        background-color:  rgb(1 78 124);
+        right: -150%;
+        text-align: center;
+        transition: all 0.2;
+    }
+
+    .nav-principal ul li{
+        display: block;
+        margin: 3rem 0;
+        line-height: 2rem;
+    }
+
+    .nav-principal ul li a{
+        font-size: 1.2rem;
+    }
+
+    .checkbtn{
+        line-height: 6.5rem;
+    }
+
+    #check:checked ~ ul{
+        right: 0;
+    }
+
+    .nuestros-productos-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*Celulares*/
+@media only screen and (max-width: 700px){
+    .nuestros-productos-grid{
+        grid-template-columns: 1fr;
+    }
+}

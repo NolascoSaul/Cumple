@@ -4,32 +4,76 @@ html{
 
 body{
     margin: 0; 
-}
-
-header h1{
-    text-align: center;
-    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
-    font-size: 3.5rem;
-}
-
-header h1 span{
-    color: rgb(1 78 124);
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 a{
     text-decoration: none;
 }
 
-.nav-principal{
+.header-principal{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: rgb(1 78 124);
-    padding: 0.5rem 2rem;   
+    align-items: center;
+    width: 100%;
+    position: fixed;
 }
 
-.nav-principal a{
+.nav-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 79, 124);
+    height: 5rem;
+    width: 100%;
+}
+
+.header-principal h1{
+    margin: 0;
+    position: absolute;
+    padding: 0rem 3rem;
+    color: #b9ff38;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.header-principal h1 span{
     color: white;
+}
+
+.nav-principal ul{
+    list-style: none;
+}
+
+.nav-principal ul li{
+    display: inline-block;
+    line-height: 5rem;
+    margin: 0 1rem;
+}
+
+.nav-principal ul li a{
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.checkbtn{
+    float: right;
+    color: white;
+    
+    cursor: pointer;
+    margin-right: 2.5rem;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.nav-principal a:hover{
+    transform: translateY(-0.1rem);
+    font-weight: bold;
 }
 
 main section{
@@ -56,11 +100,11 @@ main section p{
 
 #banner{
     margin: 0 auto;
-    background-image: url('/../img/principal.jpg');
+    background-image: url(/img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 15rem;
+    height: 25rem;
 }
 
 /*Bloque categoría de productos*/
@@ -73,7 +117,7 @@ main section p{
 .categoria{
     border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 .categoria:hover {
     transform: translateY(-5px);
@@ -81,6 +125,7 @@ main section p{
 }
 .categoria:hover a{
     color: white;
+    font-weight: bolder;
 }
 .categoria img {
     width: 100%;
@@ -91,7 +136,7 @@ main section p{
 
 /* Bloque sobre nosotros*/
 .sobre-nosotros{
-    background-image: linear-gradient(to right, transparent 50%, rgb(1 78 124) 50%, #294380 100%), url(/../img/nosotros.jpg);
+    background-image: linear-gradient(to right, transparent 50%, rgb(1 78 124) 50%, #294380 100%), url(/img/nosotros.jpg);
     background-position: left center;
     background-repeat: no-repeat;
     padding: 10rem 0;
@@ -110,8 +155,12 @@ main section p{
     padding: 5rem;
 }
 
-.texto-nosotros h2{
+.texto-nosotros p{
     color: white;
+}
+
+.texto-nosotros h2{
+    color: #b9ff38;
 }
 
 /*Bloque productos*/
@@ -144,6 +193,7 @@ main section p{
 
 .precio{
     font-size: 1.8rem;
+    margin: 1.8rem;
     font-weight: 900;
     color: #b9ff38;
 }
@@ -186,21 +236,15 @@ main section p{
     text-align: center;
     padding-bottom: 1rem;
     color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-menu a:hover{
+    transform: translateY(-0.1rem);
+    font-weight: bold;
 }
 
 .copyright {
     margin-top: 3rem;
     text-align: center;
-}
-
-@media only screen and (max-width: 992px){    
-    .nuestros-productos-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .nuestros-productos-grid{
-        grid-template-columns: 1fr;
-    }
 }

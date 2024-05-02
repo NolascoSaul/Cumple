@@ -6,26 +6,36 @@
     <meta name="description" content="Tienda de muebles en línea">
     <title>Tienda Online</title>
     <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" href="styles\media.css" media="screen and (max-width: 992px)">
 </head>
 <body>
-    <header>
+    <header class="header-principal">
         <h1>Tienda <span>Muebles</span></h1>
-    </header>
 
-    <!--Sección de opciones-->
-    <nav class="nav-principal">
-        <a href="#">Inicio</a>
-        <a href="pages\nosotros.html">Nosotros</a>
-        <a href="pages\tienda.html">Tienda</a>
-        <a href="pages\blog.html">Blog</a>
-        <a href="pages\galeria.html">Galeria</a>
-        <a href="pages\contacto.html">Contacto</a>
-    </nav>
+        <!--Sección de opciones-->
+        <nav class="nav-principal">
+            <input type="checkbox" id="check" title="check">
+            <label for="check" class="checkbtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </label>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="pages\nosotros.html">Nosotros</a></li>
+                <li><a href="pages\tienda.html">Tienda</a></li>
+                <li><a href="pages\blog.html">Blog</a></li>
+                <li><a href="pages\galeria.html">Galeria</a></li>
+                <li><a href="pages\contacto.html">Contacto</a></li>
+            </ul>
+            
+        </nav>
+    </header>    
+
+    <!--Sección del banner-->
+    <section id="banner"></section>
 
     <main>  
-        <!--Sección del banner-->
-        <section id="banner"></section>
-
         <!--Sección de categorías-->
         <section>
             <h2>Categoría de productos</h2> 

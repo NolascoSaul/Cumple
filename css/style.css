@@ -20,6 +20,7 @@ a{
     width: 100%;
     position: fixed;
     background-color: rgb(1, 79, 124);
+    z-index: 2;
 }
 
 .nav-principal{

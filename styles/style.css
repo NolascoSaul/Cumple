@@ -11,6 +11,7 @@ body{
 
 a{
     text-decoration: none;
+    color: #294380;
 }
 
 .header-principal{
@@ -18,13 +19,13 @@ a{
     align-items: center;
     width: 100%;
     position: fixed;
+    background-color: rgb(1, 79, 124);
 }
 
 .nav-principal{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(1, 79, 124);
+    justify-content: end;
     height: 5rem;
     width: 100%;
 }
@@ -61,7 +62,6 @@ a{
 .checkbtn{
     float: right;
     color: white;
-    
     cursor: pointer;
     margin-right: 2.5rem;
     display: none;
@@ -99,8 +99,7 @@ main section p{
 }
 
 #banner{
-    margin: 0 auto;
-    background-image: url("/img/principal.jpg");
+    background-image: url('../img/principal.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -136,23 +135,28 @@ main section p{
 
 /* Bloque sobre nosotros*/
 .sobre-nosotros{
-    background-image: linear-gradient(to right, transparent 50%, rgb(1 78 124) 50%, #294380 100%), url("/img/nosotros.jpg");
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding: 10rem 0;
-    background-size: 100%, auto;
-}
-
-.sobre-nosotros-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: unset;
-    column-gap: 10rem;
+    padding-left: 0;
+    padding-right: 0;
+    height: 40rem;
+}
+
+.img-nosotros{
+    grid-column: 1;
+    background-image: url('../img/nosotros.jpg');
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .texto-nosotros{
-    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2;
     padding: 5rem;
+    background: linear-gradient(to right, rgb(1 78 124), #294380);
 }
 
 .texto-nosotros p{
@@ -176,6 +180,8 @@ main section p{
     background-color: rgb(1 78 124);
     color: white;
 }
+
+
 .producto img{
     width: 100%;
     height: auto;

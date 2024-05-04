@@ -35,12 +35,12 @@ a{
     margin: 0;
     position: absolute;
     padding: 0rem 3rem;
-    color: #b9ff38;
+    color: white;
     text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 }
 
 .header-principal h1 span{
-    color: white;
+    color: #b9ff38;
 }
 
 .nav-principal ul{
